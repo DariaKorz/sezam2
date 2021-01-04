@@ -1,0 +1,58 @@
+mat lab - lesson 1
+
+
+
+clc - wyczyść ekran
+
+>>help plot - pomoc lokalna
+
+>>help temat
+
+who- lista zmiennych
+
+whos- rodzaj zmiennej, wlasciwosci powstalych zmiennych
+
+clear
+
+>>x=1,y=2,z=3
+
+>>x=1;y=2;z=3; - bez potwierdzenia od programu
+
+ans - zmienna, ktora zawsze sie steorzy
+
+>> napis= 'Ala ma kota'
+
+>>disp(napis) - drukuj napis
+
+>> fprintf('Zakres bajtu jest od %i so %y/n', 0, 255)
+>> printf
+>> sprintf
+
+>>disp(x) - podaje x
+
+>>pes= input ('Podaj PESEL: ', 's') - s mowi bedziesz wczytywal napis, czyli zera z przodu liczby tez
+Podaj PESEL: 00050677709
+
+
+TRÓJKĄT
+>> a= input('Podaj bok a: ')
+Podaj bok a: 12
+
+>> b= input('Podaj bok b: ')
+Podaj bok b: 12
+
+>> sameeeee
+
+matrix array table vector
+
+>>tab [1 2 3] - macierz
+>> 5*tab - wymnoży macierz
+>>tab+1 - doda
+>>tab[1;2;3] - wypisze w pionie
+
+>>tab= zeros(5,9) - macierz wypełniona zerami, wierszy 5, kolumn 9
+>>tab= ones ...
+>>tab= rand ...
+>>tab= eye(10,10) - przekątna jedynki, reszta zera
+>>tab(3,:)=77 -   3-wiersz trzeci :-kolumny wyszstkie
+

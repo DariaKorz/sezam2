@@ -1,0 +1,25 @@
+MATLAB lesson2
+
+Równania i delta
+clc
+disp ('Równanie kwadratowe ax^2 + bx + c = 0')
+disp ('Pierwiastki rzeczywiste')
+		//(a=1, b=2, c=1 )
+		//lub jak ktos ma podac
+a= input ('Podaj a: ', 's'); //'s' zadeklarowanie jako znaku nie liczby, skrypt nie upadnie przy literach
+	if a== 0
+		disp('a nie może być równe 0, program się zatrzymał')
+		return
+		end
+b= input ('Podaj b: ');
+c= input ('Podaj c: ');
+delta= b^2 - 4*a*c
+	if delta< 0
+		disp ('delta<0 nie ma pierwiastków rzeczywistych, prosgram się zatrzymał')
+		return
+		end
+pd= sqrt(delta);
+x1= (-b -pd)/(2*a);
+x2= (-b +pd)/(2*a);
+fprintf('x1= %f\n', x1)  // w przedziale %f zawierają sie liczby zespolone
+fprintf('x2= %f\n', x2)
