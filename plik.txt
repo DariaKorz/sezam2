@@ -1,0 +1,4 @@
+When you create a Git commit with git commit –a, the default editor that will be opened is Vim. 
+This can be very confusing for people, as Vim is not an easy editor if you have never worked with it previously. 
+Luckily, Git allows you to change the editor that gets opened by default very easily! 
+There are two ways in which this can be done.
