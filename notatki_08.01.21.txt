@@ -1,0 +1,65 @@
+git log --oneline //historia commitów, drzewo commitów
+git commit --allow-empty -m Start //w procedurach dopuszcza brak commitow w linii historii
+git log --oneline --all //jakie commity zostały wykonane, całe drzewo commitów
+echo 1 > pliklekk //dane płyną do pliku zamiast na konsole, zawartość pliku 1
+echo 2 >> pliklekk //dopisuje do pliku 2
+
+git init
+//git config --global user.name "..."
+//git config --global user.email ...
+git status
+git commit --allow-empty -m Start
+git log --oneline
+echo 1 > plik
+git status
+git add plik
+git commit -m "Komit 1"
+git status
+git log --oneline
+git reflog
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+rm plik //usuń plik rm--remove
+git restore plik //ratowanie pliku, który został usunięty
+		//ale musi ten plik być w przechowywalni czyli po komendzie git add
+git rm --cached plik //cofa zmiany z przechowalni np add
+
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+git init
+echo 1 > plik1 ; git add . ; git commit -m Kommit1
+echo 2 > plik2 ; git add . ; git commit -m Kommit2
+echo 3 > plik3 ; git add . ; git commit -m Kommit3
+echo 4 > plik4 ; git add . ; git commit -m Kommit4
+echo 5 > plik5 ; git add . ; git commit -m Kommit5
+git log --oneline
+git reflog
+
+gitcheckout HEAD@{2} //znikają Kommit4 i Kommit5
+gitcheckout HEAD@{4} //znika Komimt3 i Kommit2
+gitcheckout HEAD@{2} //wszystkie są
+
+git checkout 7835494 //numer Kommita, umożliwia powrót do poprzednich wersji plików przez komity
+
+git checkout HEAD~3 //cofanie się do przodka, poprzednika
+git checkout HEAD^3 //przejście do potomka, kommita po wybranym //na lekcji nie zadziałało
+
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+git init
+git commit --allow-empty -m Start
+
+git branch odnoga //gałąź, osobna ścieżka plików
+git branch
+
+echo 1 > cyfry ; git add . ; git commit -m cyfry1
+echo 2 > cyfry ; git add . ; git commit -m cyfry2
+
+git checkout odnoga    //żeby wrócić do poprzedniej checkout HEAD
+
+echo A > literaA ; git add . ; git commit -m litery1
+echo B > literaB ; git add . ; git commit -m litera2
+
